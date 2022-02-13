@@ -35,7 +35,7 @@
  *
  * @return None
  */
-void print_statistics(float meanValue, float medianValue, unsigned char minValue, unsigned char maxValue);
+void print_statistics(unsigned char meanValue, unsigned char medianValue, unsigned char minValue, unsigned char maxValue);
 
 /**
  * @brief print_array()
@@ -52,14 +52,14 @@ void print_array(unsigned char *data, unsigned int size);
 /**
  * @brief find_median()
  *
- * Find Median Value of the input data array
+ * Find Median Value of the input data array (expects sorted data)
  *
  * @param data Input data array
  * @param SIZE Input data array size
  *
  * @return medianValue Return Median Value
  */
-unsigned char find_median(unsigned char *data, unsigned int size);
+unsigned char find_median(unsigned char *sorted_data, unsigned int size);
 
 /**
  * @brief find_mean()
