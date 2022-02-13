@@ -27,7 +27,8 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-void main() {
+void main() 
+{
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
@@ -36,8 +37,67 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
+  unsigned char meanValue, medianValue;
+  unsigned char minValue, maxValue;
+
   /* Statistics and Printing Functions Go Here */
+
+  /* Get median Value */
+  medianValue = find_median(test, SIZE);
+  
+  /* Get mean Value */
+  meanValue = find_mean(test, SIZE);
+  
+  /* Get max Value */
+  maxValue = find_maximum(test, SIZE);
+  
+  /* Get min Value */
+  minValue = find_minimum(test, SIZE);
+  
+  /* Sort the data */
+  sort_array(test, SIZE);
+  
+  /* Print the statistical values of the data*/
+  print_statistics(meanValue, medianValue, minValue, maxValue);
+  
+  /* Print the Data Array*/
+  print_array(test, SIZE);
 
 }
 
 /* Add other Implementation File Code Here */
+void print_statistics(float meanValue, float medianValue, unsigned char minValue, unsigned char maxValue)
+{
+
+}
+
+void print_array(unsigned char *data, unsigned int size)
+{
+
+}
+
+unsigned char find_median(unsigned char *data, unsigned int size)
+{
+
+}
+
+unsigned char find_mean(unsigned char *data, unsigned int size)
+{
+
+}
+
+unsigned char find_maximum(unsigned char *data, unsigned int size)
+{
+
+}
+
+unsigned char find_minimum(unsigned char *data, unsigned int size)
+{
+
+}
+
+void sort_array(unsigned char *data, unsigned int size)
+{
+
+}
+
